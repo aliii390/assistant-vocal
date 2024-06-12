@@ -10,7 +10,7 @@ def parler(text):
     engine = pyttsx3.init()
     engine.say(text)
     engine.runAndWait()
-    engine.stop()  # Assurez-vous d'arrêter l'instance après utilisation
+    engine.stop()  #arreter l'instance apres l'utilisation
 
 def ecoute():
     command = ""

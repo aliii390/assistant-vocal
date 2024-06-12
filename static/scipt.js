@@ -22,7 +22,7 @@ function startRecognition() {
     recognition.onerror = function(event) {
         console.error('Erreur de reconnaissance vocale :', event.error);
         document.getElementById('response').innerText = 'Erreur de reconnaissance vocale : ' + event.error;
-        recognition.start(); // Restart recognition in case of error
+        recognition.start(); 
     };
 
     recognition.start();
