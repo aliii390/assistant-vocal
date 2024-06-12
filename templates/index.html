@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>390ROBOT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="{{ url_for('static', filename='image/background.mp4') }}" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+    </div>
+
+    <header>
+        <!-- Menu -->
+        <ul class="hList">
+            <li class="menu">
+                <h2 class="menu-title">Acceuil</h2>
+                <ul class="menu-dropdown">
+                    <li> Voir le prototype </li>
+
+                </ul>
+            </li>
+            <li class="menu">
+                <h2 class="menu-title menu-title_2nd">Découvrir</h2>
+                <ul class="menu-dropdown">
+                    <li>Voici mes projets en HTML CSS</li>
+                    <li>VOICI MES PROJETS EN PYTHON</li>
+                    <li>VOICI LE PROJET DE MON ROBOT</li>
+                </ul>
+            </li>
+            <li class="menu">
+                <h2 class="menu-title menu-title_3rd">Contact</h2>
+                <ul class="menu-dropdown">
+                    <li> <a href="https://discord.com/"> <i class="fa-brands fa-square-github"></i> </a> GITHUB</li>
+                    <li> <a href="https://discord.com/"><i class="fa-brands fa-discord"></i> </a> DISCORD</li>
+                    <li> <a href="https://discord.com/"><i class="fa-brands fa-linkedin"></i></a> LINKEDIN</li>
+
+                </ul>
+            </li>
+            <li class="menu">
+                <!-- <h2 class="menu-title menu-title_4th"></h2> -->
+                <ul class="menu-dropdown">
+                    <li>Godzilla</li>
+                    <li>Man on Wire</li>
+                    <li>Spirited Away</li>
+                    <li>Interstellar</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <!-- Description Section -->
+        <h1 class="h-h1">Découvrez le Nouveau robot</h1>
+        <div>
+            <p class="p">L'avenir dans vos mains : ensemble vers un futur amélioré grâce à la technologie des robots</p>
+        </div>
+    </header>
+<!--  -->
+ 
+<div class="image-container">
+    <img src="{{ url_for('static', filename='image/bot-removebg-preview.png') }}" alt="Robot 1" />
+
+<p class="pp">BY</p>
+    <img src="{{ url_for('static', filename='image/lea-removebg-preview.png') }}" alt="Robot 2" />
+</div>
+
+        <!-- Robot Image -->
+        
+
+
+        <div class="container">
+            <div class="text">
+                <p style="margin-left: 65px;">L'Apllication est en cours </p>
+                <p>Bientot disponible sur IOS et ANDROID</p>
+            </div>
+            <div class="image">
+                <img src="{{ url_for('static', filename='image/appli.jpg') }}" alt="Robot" />
+            </div>
+        </div>
+
+        <!--  -->
+    
+       
+<h1 class="h111">TESTEZ LE 390-BOT</h1>
+            <div class="flex c-gauche">
+                <div class="card">
+                    <div class="div">
+                        <h1 class="h1">390-BOT</h1>
+                        <button class="aa popupButton ia-b">Voici l'IA</button>
+                        <div class="overlay">
+                            <div class="popup">
+                                <span class="closeButton">&times;</span>
+                                <h2 class="slogss">l'application arrive fin 2024</h2>
+                                <button class="ia-b" id="voiceButton" onclick="startRecognition()">🎤 Parler</button>
+                                <div id="response" style="text-align: center;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>l'adresse du local</h4>
+                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Mon numéro</h4>
+                                        <span>9876543210 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mon adresse mail</h4>
+                                        <span>mail@info.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="{{ url_for('static', filename='image/bot-removebg-preview.png') }}" class="img-fluid" alt="logo"></a>
+                                    </div>
+                                    
+                                    <div class="footer-social-icon">
+                                        <span>Follow us</span>
+                                        <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                        <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Lien Utiles</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Acceuil</a></li>
+                                        <li><a href="#">Mes compétence en informatique</a></li>
+                                        <li><a href="#">Découvrir</a></li>
+                                        <li><a href="#">portfolio</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Mes projet en python</a></li>
+                                        <li><a href="#">Our Services</a></li>
+                                        <li><a href="#">Mes projet en html css</a></li>
+                                        
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                    </div>
+                </div>
+                <!-- <div class="copyright-area"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Terms</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Policy</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </footer>
+
+    <script src="{{ url_for('static', filename='scipt.js') }}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
